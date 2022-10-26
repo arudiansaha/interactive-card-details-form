@@ -1,0 +1,10 @@
+{
+  "name": "interactive-card-details-form-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rizky Ardiansyah <rizkyardiansyah@disroot.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
