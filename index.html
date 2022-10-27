@@ -17,33 +17,44 @@
 </head>
 
 <body class="relative font-sans bg-white text-[#21092f] group">
-  <main class="relative flex">
-    <div class="basis-1/3 h-screen">
-      <img class="h-full object-cover" src="./images/bg-main-desktop.png" alt="gradient background">
+  <main class="relative flex max-lg:flex-col lg:flex-row max-lg:min-h-screen">
+    <div class="lg:basis-1/3 lg:h-screen">
+      <img class="lg:hidden w-full max-h-96 max-md:max-h-52 object-cover" src="./images/bg-main-mobile.png"
+        alt="gradient background">
+      <img class="max-lg:hidden h-full object-cover" src="./images/bg-main-desktop.png" alt="gradient background">
     </div>
 
-    <div class="absolute top-48 left-40 text-white">
-      <div class="relative">
+    <div class="absolute w-2/3 md:left-24 lg:top-48 lg:left-12 xl:left-40 max-lg:max-w-full lg:w-1/3 text-white">
+      <div class="relative top-[6.375rem] left-4 md:top-44 md:left-6 z-10 w-fit">
         <img src="./images/bg-card-front.png" alt="card front background">
-        <svg class="absolute top-4 left-6" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute top-4 left-6 max-md:top-2 max-md:left-4 object-cover" width="84" height="47" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
           <path
             d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
             stroke="#fff" />
         </svg>
-        <div id="frontNumber" class="absolute left-6 bottom-16 text-4xl">0000 0000 0000 0000</div>
-        <div id="frontHolder" class="absolute left-6 bottom-4 text-base uppercase">Jane Appleseed</div>
-        <div class="absolute right-6 bottom-4 text-base"><span id="frontMonth">00</span>/<span id="frontYear">00</span>
+        <div id="frontNumber" class="absolute left-4 bottom-10 md:left-6 md:bottom-16 text-lg md:text-3xl md:text-4xl">
+          0000 0000
+          0000 0000
+        </div>
+        <div id="frontHolder"
+          class="absolute bottom-2 left-4 md:left-6 md:bottom-4 text-xs md:text-sm xl:text-base uppercase">
+          Jane Appleseed
+        </div>
+        <div class="absolute right-4 bottom-2 md:right-6 md:bottom-4 text-xs md:text-sm xl:text-base"><span
+            id="frontMonth">00</span>/<span id="frontYear">00</span>
         </div>
       </div>
 
-      <div class="relative top-8 left-20 text-white">
+      <div class="relative -top-28 -right-28 md:-top-52 md:-right-28 lg:top-8 lg:left-20 w-fit text-white">
         <img src="./images/bg-card-back.png" alt="card back background">
-        <span id="backCVC" class="absolute top-[6.75rem] right-14 text-base">000</span>
+        <span id="backCVC"
+          class="absolute top-[3.75rem] right-8 md:top-[6.85rem] md:right-14 lg:top-[5.125rem] lg:right-12 text-xs lg:text-sm xl:text-base">000</span>
       </div>
     </div>
 
-    <div class="basis-2/3 w-fit my-auto">
+    <div class="lg:basis-2/3 w-fit max-lg:my-auto max-lg:mx-auto lg:my-auto max-md:p-6">
       <form id="formCard" class="grid grid-cols-1 max-w-sm mx-auto gap-y-6">
         <div>
           <label class="text-sm tracking-widest uppercase" for="card-holder">Cardholder Name</label>
@@ -118,7 +129,7 @@
   </main>
 
   <footer
-    class="flex absolute bottom-10 justify-center flex w-full invisible group-hover:visible group-hover:-translate-y-6 transition-all duration-700">
+    class="max-lg:hidden flex absolute bottom-10 justify-center flex w-full invisible group-hover:visible group-hover:-translate-y-6 transition-all duration-700">
     <div class="py-2 px-4 w-fit rounded-lg bg-[#dedddf] text-[#21092f]">
       Challenge by <a class="text-blue-500" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
         Mentor</a>.

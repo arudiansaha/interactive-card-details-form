@@ -32,11 +32,12 @@ Users should be able to:
 ### Screenshot
 
 - [Desktop](./screenshots/desktop_1440-900.png)
+- [Mobile](./screenshots/desktop_375-704.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click here.](https://github.com/arudiansaha/interactive-card-details-form)
+- Live Site URL: [Click here.](https://arudiansaha.github.io/interactive-card-details-form)
 
 ## My process
 
